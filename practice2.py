@@ -31,3 +31,14 @@ def largest(numbers):
     return largest_num
 print(largest([23,1,45,33,90,56,13]))
 print(largest([4,2,3,5,1]))
+
+
+def smallest(numbers):
+    smallest_num=numbers[0]
+    for num in numbers:
+        if num<smallest_num:
+            smallest_num=num
+
+    return smallest_num
+print(smallest([5,7,3,8]))
+print(smallest([89,34,56,12,77,55]))
