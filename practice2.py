@@ -53,3 +53,9 @@ def count_vowels(text):
     return count
 print(count_vowels("HI everyone, How Are you"))
 
+def reverse_text(text):
+    reversed_str=""
+    for char in text:
+        reversed_str=char+reversed_str
+    return reversed_str
+print(reverse_text("python language"))
