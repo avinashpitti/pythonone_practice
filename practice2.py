@@ -59,3 +59,14 @@ def reverse_text(text):
         reversed_str=char+reversed_str
     return reversed_str
 print(reverse_text("python language"))
+
+
+def is_palindrome(text):
+    clean_text=text.lower()
+    reversed_str=""
+    for char in clean_text:
+        reversed_str=char+reversed_str
+    return clean_text==reversed_str
+print(is_palindrome("Madam"))
+print(is_palindrome("Teacher"))
+print(is_palindrome("Pop"))
