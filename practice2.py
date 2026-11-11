@@ -70,3 +70,22 @@ def is_palindrome(text):
 print(is_palindrome("Madam"))
 print(is_palindrome("Teacher"))
 print(is_palindrome("Pop"))
+
+
+def get_evens(nums):
+    evens=[]
+    for num in nums:
+        if num%2==0:
+            evens.append(num)
+    return evens
+print(get_evens([1,2,3,4,5,6,7,8]))
+
+
+odd_nums=[1,2,3,4,5,6,7,8,9]
+def get_odds(odd_nums):
+    odds=[]
+    for odd_num in odd_nums:
+        if odd_num%2==1:
+            odds.append(odd_num)
+    return odds
+print(get_odds(odd_nums))
