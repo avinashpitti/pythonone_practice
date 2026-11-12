@@ -117,3 +117,12 @@ def count_words(text):
     return counts
 print(count_words("This is a python learning project"))
 print(count_words("I am a developer"))
+
+
+def word_length(texts):
+    return[len(word) for word in texts]
+print(words_length("This is a backend language"))
+
+# def word_length(texts):
+#     return list(map(len,texts.split()))
+# print(word_length("This is a backend language"))
