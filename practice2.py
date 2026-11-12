@@ -98,3 +98,12 @@ def factorial(n):
     return result
 print(factorial(5))
 print(factorial(0))
+
+
+def words_length(text):
+    words=text.split()
+    lengths=[]
+    for word in words:
+        lengths.append(len(word))
+    return lengths
+print(words_length("This is a python learning project"))
