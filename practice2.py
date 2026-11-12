@@ -173,3 +173,14 @@ def char_count(text):
                 counts[char]=1
     return counts
 print(char_count("Hello, world! 1222323"))
+
+
+def remove_punctuations(text):
+    puncs=".,!?"
+    clean_text=text.lower()
+    result=""
+    for char in clean_text:
+        if char not in puncs:
+            result+=char
+    return result
+print(remove_punctuations("oh!shit man. How did you do that?"))
