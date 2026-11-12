@@ -107,3 +107,13 @@ def words_length(text):
         lengths.append(len(word))
     return lengths
 print(words_length("This is a python learning project"))
+
+
+def count_words(text):
+    clean_text=text.split()
+    counts=0
+    for word in clean_text:
+        counts+=1
+    return counts
+print(count_words("This is a python learning project"))
+print(count_words("I am a developer"))
