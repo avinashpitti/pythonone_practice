@@ -126,3 +126,15 @@ print(words_length("This is a backend language"))
 # def word_length(texts):
 #     return list(map(len,texts.split()))
 # print(word_length("This is a backend language"))
+
+def char_count(text):
+    text=text.lower()
+    count={}
+    for char in text:
+        if char in count:
+            count[char]+=1
+        else:
+            count[char]=1
+    return count
+print(char_count("This is a python project"))
+
