@@ -202,3 +202,29 @@ def count_words(text):
             count[word]=1
     return count
 print(count_words("The cat, and the rat, are playing!"))
+
+
+def most_common(text):
+    text=text.lower()
+    punc=".,?!"
+    for p in punc:
+        text=text.replace(p,"")
+    words = text.split()
+
+    counts={}
+    for word in words:
+        if word in counts:
+            counts[word]+=1
+        else:
+            counts[word]=1
+
+    max_words=""
+    max_count=0
+    for word,count in counts.items():
+        if count>max_count:
+            max_count=count
+            max_words=word
+    return max_words
+print(most_common("Go go go come on guys! where were you?"))
+
+
