@@ -184,3 +184,21 @@ def remove_punctuations(text):
             result+=char
     return result
 print(remove_punctuations("oh!shit man. How did you do that?"))
+
+
+def count_words(text):
+    text=text.lower()
+    punc=".,?!"
+    for p in punc:
+        text=text.replace(p,"")
+
+    words=text.split()
+
+    count={}
+    for word in words:
+        if word in count:
+            count[word]+=1
+        else:
+            count[word]=1
+    return count
+print(count_words("The cat, and the rat, are playing!"))
