@@ -138,3 +138,38 @@ def char_count(text):
     return count
 print(char_count("This is a python project"))
 
+from collections import Counter
+def char_count(words):
+    return dict(Counter(words.lower()))
+print(char_count("I am learning python development along with fastapi"))
+
+
+def char_count(text):
+    text=text.lower()
+    count={}
+    for char in text:
+        if char.isalpha(): #isalpha considers only alphabets(no nums, no special chars)
+            if char in count:
+                count[char]+=1
+            else:
+                count[char]=1
+    return count
+print(char_count("Hello, World! 123"))
+
+# from collections import Counter
+# def char_count(text):
+#     return dict(Counter(text.lower().replace(" ","")))
+# print(char_count("Hello,world! By Avinash!"))
+
+
+def char_count(text):
+    text=text.lower()
+    counts={}
+    for char in text:
+        if char.isalnum():
+            if char in counts:
+                counts[char]+=1
+            else:
+                counts[char]=1
+    return counts
+print(char_count("Hello, world! 1222323"))
