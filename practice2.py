@@ -241,26 +241,41 @@ print(unique([1, 2, 2, 3, 1, 4]))
 print(unique(["a","b","a"]))
 
 
-def fizzbuzz(*args):
-    numbers=[]
-    for arg in args:
-        if isinstance(arg,list):
-            numbers.extend(arg)
-        else:
-            numbers.append(arg)
-    results=[]
+# def fizzbuzz(*args):
+#     numbers=[]
+#     for arg in args:
+#         if isinstance(arg,list):
+#             numbers.extend(arg)
+#         else:
+#             numbers.append(arg)
+#     results=[]
 
-    for n in numbers:
-        if n%3==0 and n%5==0:
-            results.append("FizzBuzz")
-        elif n%3==0:
-            results.append("Fizz")
-        elif n%5==0:
-            results.append("Buzz")
-        else:
-            results.append(n)
-    return results
-print(fizzbuzz([1,2,3,4,5]))
-print(fizzbuzz([1,5,11,3,13,14,15]))
+#     for n in numbers:
+#         if n%3==0 and n%5==0:
+#             results.append("FizzBuzz")
+#         elif n%3==0:
+#             results.append("Fizz")
+#         elif n%5==0:
+#             results.append("Buzz")
+#         else:
+#             results.append(n)
+#     return results
+# print(fizzbuzz([1,2,3,4,5]))
+# print(fizzbuzz([1,5,11,3,13,14,15]))
         
+
+def fizzbuzz(n):
+    result=[]
+    for i in range(1,n+1):
+        if i%3==0 and i%5==0:
+            result.append("FizzBuzz")
+        elif i%3==0:
+            result.append("Fizz")
+        elif i%5==0:
+            result.append("Buzz")
+        else:
+            result.append(i)
+    return result
+print(fizzbuzz(5))
+print(fizzbuzz(15))
 
