@@ -239,3 +239,28 @@ def unique(items):
     return result
 print(unique([1, 2, 2, 3, 1, 4]))
 print(unique(["a","b","a"]))
+
+
+def fizzbuzz(*args):
+    numbers=[]
+    for arg in args:
+        if isinstance(arg,list):
+            numbers.extend(arg)
+        else:
+            numbers.append(arg)
+    results=[]
+
+    for n in numbers:
+        if n%3==0 and n%5==0:
+            results.append("FizzBuzz")
+        elif n%3==0:
+            results.append("Fizz")
+        elif n%5==0:
+            results.append("Buzz")
+        else:
+            results.append(n)
+    return results
+print(fizzbuzz([1,2,3,4,5]))
+print(fizzbuzz([1,5,11,3,13,14,15]))
+        
+
