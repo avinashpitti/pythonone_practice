@@ -225,6 +225,17 @@ def most_common(text):
             max_count=count
             max_words=word
     return max_words
-print(most_common("Go go go come on guys! where were you?"))
+print(most_common("The cat and the hat. The end!"))
+print(most_common("go go stop"))
 
 
+def unique(items):
+    result=[]
+    seen=set()
+    for item in items:
+        if item not in seen:
+            result.append(item)
+            seen.add(item)
+    return result
+print(unique([1, 2, 2, 3, 1, 4]))
+print(unique(["a","b","a"]))
