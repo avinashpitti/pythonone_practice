@@ -279,3 +279,22 @@ def fizzbuzz(n):
 print(fizzbuzz(5))
 print(fizzbuzz(15))
 
+
+def digit_sum(n):
+    total=0
+    while n>0:
+        digit =n%10
+        total+=digit
+        n=n//10
+    return total
+print(digit_sum(123))
+print(digit_sum(9045))
+
+
+def update_list(val, nums=[]):
+    nums.append(val)
+    return nums
+
+print(update_list(10))
+print(update_list(20))
+
