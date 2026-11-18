@@ -298,3 +298,18 @@ def update_list(val, nums=[]):
 print(update_list(10))
 print(update_list(20))
 
+
+def calculate_delivery_fee(cart_value,is_raining):
+    fee=0
+    if cart_value>=500:
+        fee=0
+    else:
+        fee=40
+
+    if is_raining:
+        fee+=20
+    return fee
+print(calculate_delivery_fee(560,True))
+print(calculate_delivery_fee(560,False))
+print(calculate_delivery_fee(400,True))
+print(calculate_delivery_fee(400,False))
