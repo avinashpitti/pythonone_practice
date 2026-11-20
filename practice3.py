@@ -1,10 +1,10 @@
-x=[1,2,3]
-x.append([4,5])
-print(len(x))
+student={
+    "name":"Rahul",
+    "age":22
+}
 
-x="Python"
-print(x[1:4])
+print(student.get("marks"))# it returns none(not an error)
+print(student.get("city","Bengaluru"))# it gives the default value Bengaluru
 
-y=[1,34,23,89,22,14,3]
-y.sort(key=lambda x:x)
-print(y)
+print(student.get("name","not provided"))
+print(student.get("email","not provided"))
