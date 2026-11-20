@@ -20,3 +20,7 @@ print('Value:{}'.format(y))
 
 z={'a':10,'b':20}
 print(list(z.keys()))
+print(list(z.values()))
+print(z.keys())
+print(z.values())
+print(z.items())
