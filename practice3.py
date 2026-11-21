@@ -21,6 +21,22 @@ print('Value:{}'.format(y))
 z={'a':10,'b':20}
 print(list(z.keys()))
 print(list(z.values()))
+print(list(z.items()))
 print(z.keys())
 print(z.values())
 print(z.items())
+
+
+for key in z:
+    print(key)
+
+for value in z.values():
+    print(value)
+
+for item in z.items():
+    print(item)
+
+x='banana'
+print(x.count('a'))
+print(x.count('b'))
+print(x.count('n'))
