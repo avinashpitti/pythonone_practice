@@ -40,3 +40,10 @@ x='banana'
 print(x.count('a'))
 print(x.count('b'))
 print(x.count('n'))
+
+
+for m in range(10,0,-2):
+    print(m)
+
+
+print('hello'.find('z'))
