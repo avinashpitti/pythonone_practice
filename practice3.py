@@ -57,3 +57,12 @@ for i in range(1,101):
         print("Buzz")
     else:
         print(i)
+
+
+name='Python'
+def reversing_string(name):
+    result=''
+    for char in name:
+        result=char+result
+    return result
+print(reversing_string(name))
