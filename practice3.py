@@ -89,5 +89,17 @@ c=copy.deepcopy(a)
 c[0][0]=0
 print(a) # deep copy doesn't changes
 
+print(7/2)
+print(7//2) # floor division
+print(7%2)
+print(-7//2) # floor division
 
+x=6
+print(not 1<x<10)
+
+d={}
+print(type(d))
+
+for i in enumerate(['a','b']):
+    print(i)
 
