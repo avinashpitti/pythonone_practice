@@ -66,3 +66,10 @@ def reversing_string(name):
         result=char+result
     return result
 print(reversing_string(name))
+
+
+funcs=[lambda: i for i in range(3)]
+print([f() for f in funcs])
+
+fun=[lambda i=i:i for i in range(3)]
+print([f() for f in fun])
