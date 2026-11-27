@@ -73,3 +73,21 @@ print([f() for f in funcs])
 
 fun=[lambda i=i:i for i in range(3)]
 print([f() for f in fun])
+
+
+from decimal import Decimal
+print(Decimal("0.1")+Decimal("0.2"))
+
+import copy
+a=[[1,2],[3,4]]
+b=a.copy()
+b[0][0]=99
+print(a) # shallow copy changes
+
+
+c=copy.deepcopy(a)
+c[0][0]=0
+print(a) # deep copy doesn't changes
+
+
+
