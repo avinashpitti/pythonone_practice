@@ -133,3 +133,16 @@ print(sorted("cba"))
 print(type(1/2))
 print("".join(["a","b","c"]))
 print(bool(0))
+
+def gen():
+    yield 1
+    yield 2
+    yield 3
+g=gen()
+print(next(g))
+print(next(g))
+print(next(g))
+
+print("-".join(["x","y","z"]))
+print(" ".join(["x","y","z"]))
+print("".join(["x","y","z"]))
