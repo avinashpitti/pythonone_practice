@@ -103,3 +103,14 @@ print(type(d))
 for i in enumerate(['a','b']):
     print(i)
 
+
+print(2==2.0)
+print(bool(""))
+print(list(zip([1,2],['a','b'])))
+
+print(any([0,0,1]))
+print(all([1,0,1]))
+
+print(int('1000',2))
+
+print(1 if 0 else 2)
