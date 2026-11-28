@@ -146,3 +146,21 @@ print(next(g))
 print("-".join(["x","y","z"]))
 print(" ".join(["x","y","z"]))
 print("".join(["x","y","z"]))
+
+def gen():
+    yield 1
+    yield 2
+g=gen()
+print(list(g))
+
+def gen():
+    return 1
+    yield 2
+print(list(gen()))
+
+class C:
+    @staticmethod
+    def f(x):
+        return x * 2
+
+print(C.f(5))
